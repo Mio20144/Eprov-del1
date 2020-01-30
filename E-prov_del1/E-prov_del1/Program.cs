@@ -13,6 +13,7 @@ namespace E_prov_del1
 
             bool success = false;
             string answerString;
+            //skapar en ny hero av basklassen
             Superhero s1 = new Superhero();
             Console.WriteLine("Welcome to Hero Academy");
             while (success == false)
@@ -24,6 +25,7 @@ namespace E_prov_del1
                 Console.WriteLine("3. Supersmart");
                 Console.WriteLine("Enter the number of the hero you wish to be");
                 answerString = Console.ReadLine();
+                //låter användaren välja vilken hjälte hen vill vara
                 if (answerString == "1")
                 {
                     Console.WriteLine("You have chosen SuperStrong");
@@ -58,6 +60,7 @@ namespace E_prov_del1
             bool success2 = false;
             while (success2 == false)
             {
+                //låter användaren skriva ett namn mellan 1- 10 karaktärer
                 Console.WriteLine("Please choose a name for you hero. 1 to 10 letters");
                 s1.name = Console.ReadLine();
                 if (s1.name.Length > 0 && s1.name.Length < 11)
@@ -74,6 +77,7 @@ namespace E_prov_del1
             bool success3 = false;
             while (success3 == false)
             {
+                //skriver ut karaktärens stats, dessa förändras beroende på vilken hjälte man valde
                 Console.WriteLine("These are your stats");
                 Console.WriteLine("Strength:" + s1.strenght);
                 Console.WriteLine("Agility" + s1.agility);

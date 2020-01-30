@@ -8,6 +8,7 @@ namespace E_prov_del1
 {
     class Superhero
     {
+        //värden som alla subklasser behöver tillgång till
         public string name;
         public int strenght;
         public int agility;
